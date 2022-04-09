@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+	<title>Giỏ hàng</title>
+    <script src="https://kit.fontawesome.com/4702f02b2a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+    <link rel="stylesheet" href="css/mainstyle.css"/>
+	<link rel="stylesheet" href="css/giohang.css">
+	<link rel="stylesheet" href="css/basket.css">
+	<script src="basket.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="background-color: #F1F1F1;" >
+        
+        <header>
+            <nav class="header">
+                <ul>
+                    <li>
+                        &ensp;&ensp;&ensp;&ensp;
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="logo" width="40%" align="middle">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        </p>
+                    </li>
+                    <li>
+                        <form>
+                            <input type="timkiem" name="search" placeholder="Search..." align="middle">
+                            <i class="fas fa-search" style="color:white; font-size: 23px;" align="middle"></i>
+                        </form>
+                    </li>
+                    <li>
+                        <p>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;                        
+                        </p>
+                    </li>
+                    <li>
+                        <div class="dropacc">
+                            <button class="dropaccbtn"><i class="fas fa-user-circle" style="color:white; font-size: 25px;" align="middle"></i></button>
+                            <div align="left" class="dropacc-content">
+                                <a href="login.html">Đăng nhập</a>
+                                <a href="signup.html">Đăng ký</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><p>&ensp;</p></li>
+                    <li>
+                        <button id="cart">
+                            <a href="giohang.html"><i class="fas fa-shopping-cart" style="color:white; font-size: 25px;" align="middle"></i></a>
+                        </button>                        
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <div class="dropdown">
+                    <a href="sanpham.html"><button class="dropbtn">Sản phẩm</button></a>
+                      <div align="left" class="dropdown-content">
+                            <a href="laptopvanphong.html">Laptop Văn Phòng</a>
+                            <a href="laptopdohoakythuat.html">Laptop Đồ Hoạ - Kỹ Thuật</a>
+                            <a href="laptopgaming.html">Laptop Gaming</a>
+                            <a href="linhkien.html">Linh kiện</a>
+                      </div>
+                </div>
+                
+                <li><a href="hoidap.html">Hỏi đáp</a></li>
+				<li><a href="thanhvien.html">Thành viên</a></li>
+            </ul>
+        </nav>
+		<div class="container" >
+
+			<!--  tiêu đề chung -->
+
+			<div class="row">
+				<div id="move">
+					<ul>
+						<li id="child1" class="wow slideInLeft" ><a href="index.html">TRANG CHỦ </a></li>
+						<li id="child2" class="wow slideInLeft" ><i class="fas fa-angle-double-right"></i></li>
+						<li id="child3" class="wow slideInDown" style=" color: #f76d2c;"> Giỏ Hàng</li>
+					</ul>
+				</div>
+
+			</div>
+			<div id="title" class="row">
+				<h6 class="wow slideInDown" data-wow-delay=".2s">GIỎ HÀNG CỦA TÔI </h6>
+			</div>
+			<!--  giỏ hàng của tôi -->
+			<div>
+				<div class="row" id="progrees">
+					<div class="col-md-3 col-sm-0 col-xs-0"></div>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<!-- shoping -->
+						<div class="col-md-4 col-sm-4 run wow slideInLeft">
+							<i class="fas fa-shopping-cart"></i>
+							<p>GIỎ HÀNG CỦA TÔI</p>
+							<div class="ray"><a>1</a></div>
+						</div>
+						<!-- pay -->
+						<div class="col-md-4 col-sm-4 run wow flipInY">
+							<i class="far fa-money-bill-alt"></i>
+							<p>THANH TOÁN</p>
+							<div class="ray"><a>2</a></div>
+						</div>
+						<!-- alright -->
+						<div class="col-md-4 col-sm-4 run wow slideInRight">
+							<i class="fas fa-check"></i>
+							<p>HOÀN TẤT</p>
+							<div class="ray"><a>3</a></div>	
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-0 col-xs-0"></div>
+				</div>
+				<div class="row row_car" id="tieude">
+					<table>
+						<tr>
+							<td class="wow slideInLeft" data-wow-delay=".2s">Sản phẩm</td>
+							<td class="wow slideInLeft" data-wow-delay=".3s">Hình Ảnh</td>
+							<td class="wow slideInLeft" data-wow-delay=".4s">Giá</td>
+							<td class="wow slideInLeft" data-wow-delay=".5s">Số Lượng</td>
+							<td class="wow slideInLeft" data-wow-delay=".6s">Thành Tiền</td>
+							<td class="wow slideInLeft" data-wow-delay=".7s"></td>
+						</tr>
+					</table>
+
+				</div>
+				<div class="row row_car" id="bang">
+					<table>
+						<tr>
+							<td class="wow slideInLeft" data-wow-delay=".2s">HP Zbook Fury 17 G7 26F43AV</td>
+							<td class="wow slideInLeft" data-wow-delay=".3s"><img src="img/hp/hp.png" alt=""></td>
+							<td class="wow slideInLeft" data-wow-delay=".4s">62.490.000 ₫</td>
+							<td class="wow slideInLeft" data-wow-delay=".5s"><input style="width: 50px;" type="number" name="" id=""></td>
+							<td class="wow slideInLeft" data-wow-delay=".6s">62.490.000 ₫</td>
+							<td class="wow slideInLeft" data-wow-delay=".7s"><i class="fas fa-trash-alt"></i></td>
+						</tr>
+						<tr>
+							<td class="wow slideInLeft" data-wow-delay=".2s">Gaming Dell Alienware M15</td>
+							<td class="wow slideInLeft" data-wow-delay=".3s"><img src="img/dell/dell.png" alt=""></td>
+							<td class="wow slideInLeft" data-wow-delay=".4s">54.590.000₫</td>
+							<td class="wow slideInLeft" data-wow-delay=".5s"><input style="width: 50px;" type="number" name="" id=""></td>
+							<td class="wow slideInLeft" data-wow-delay=".6s">54.590.000₫</td>
+							<td class="wow slideInLeft" data-wow-delay=".7s"><i class="fas fa-trash-alt"></i></td>
+						</tr>
+						<tr>
+							<td class="wow slideInLeft" data-wow-delay=".2s">Lenovo Legion 5 15ITH6H 82JH002VVN</td>
+							<td class="wow slideInLeft" data-wow-delay=".3s"><img src="img/lenovo/lenovo.png" alt=""></td>
+							<td class="wow slideInLeft" data-wow-delay=".4s">35.990.000 ₫</td>
+							<td class="wow slideInLeft" data-wow-delay=".5s"><input style="width: 50px;" type="number" name="" id=""></td>
+							<td class="wow slideInLeft" data-wow-delay=".6s">35.990.000 ₫</td>
+							<td class="wow slideInLeft" data-wow-delay=".7s"><i class="fas fa-trash-alt"></i></td>
+						</tr>
+					</table>
+				</div>
+				<!--  thanh toan -->
+
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<div id="tongtien">
+							<p class="wow slideInRight" data-wow-delay=".7s">Tổng thanh toán : <span> 153.070.000 ₫đ</span></p>
+						</div>
+					</div>
+					<div class="col-md-12 col-xs-12" style="padding-bottom: 50px;" >
+						<a href="" id="end" class="wow tada" data-wow-delay=".8s">TIẾN HÀN THANH TOÁN</a>
+						<a href="index.html" id="continue" class="wow tada" data-wow-delay=".8s">TIẾP TỤC MUA HÀNG</a>
+
+					</div>
+				</div>	
+			</div>
+		</div>
+		<footer>
+            <section class="footer">
+                <article style="text-align: left;">
+                    <h4>CỬA HÀNG PHÂN PHỐI LAPTOP - LAPTOP NTT</h4>
+					<p style="color: darkgrey;"><i class="fas fa-map-marker-alt" style="color: white; font-size: 20-px;"></i> <strong style="color: white;">Địa chỉ:</strong> phường Hoà Lợi,thị xã Bến Cát, tỉnh Bình Dương</p>
+                    <p>Copyright &copy; Nuyễn Trung Trực - D21CNTT01</p>
+                </article>
+                <article style="text-align: center;">
+                    <h4>MẠNG XÃ HỘI</h4>
+                    <nav class="scocialmedia">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/trungtruc2411" target="_blank">
+                                    <i class="fab fa-facebook-square" style="color: white; font-size: 35px; width: 3%;"></i>
+                                </a>
+                                &ensp;
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ttruc_2_4_1_1/?hl=vi" target="_blank">
+                                    <i class="fab fa-instagram" style="color: white; font-size: 35px; width: 3%;"></i>
+                                </a>
+                                &ensp;
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCSLMp2IfPLhsgAHmsyu41eQ" target="_blank">
+                                    <i class="fab fa-youtube" style="color: white; font-size: 35px; width: 3%;"></i>
+                                </a>
+                                &ensp;
+                            </li>
+                        </ul>
+                    </nav>
+                </article>
+                <article style="text-align: left;">
+					
+                    <p style="color: darkgrey;"><i class="fas fa-phone" style="color: white; font-size: 20-px;"></i> <strong style="color: white;">Điện thoại:</strong> 033190926</p>
+                    <p style="color: darkgrey;"><i class="fas fa-envelope" style="color: white; font-size: 20-px;"></i> <strong style="color: white;">Mail:</strong> truc5911@gmail.com</p>
+                    <p style="color: darkgrey;"><i class="fas fa-clock" style="color: white; font-size: 20-px;"></i> <strong style="color: white;">Giờ mở cửa:</strong> 8:00 đến 20:00 tất cả các ngày trong tuần</p>
+                </article>
+            </section>
+        </footer>
+	</body>
+	</html>
